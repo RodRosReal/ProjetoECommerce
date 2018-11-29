@@ -1,0 +1,115 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Infrastructure", "ECommerce.Infrastructure\ECommerce.Infrastructure.csproj", "{18A6FDDA-3214-4A2D-A559-8C9BC5FF856B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Domain", "ECommerce.Domain\ECommerce.Domain.csproj", "{15DF9968-2CF8-469A-AF12-A8914B664EAF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{296FEB4B-3DA7-4BBE-BA64-C99F876F1DE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dal", "Dal", "{E9FAD351-A3F4-4734-8916-5C25D413296B}"
+	ProjectSection(SolutionItems) = preProject
+		Templates\Dal\BaseExample.Context.tt = Templates\Dal\BaseExample.Context.tt
+		Templates\Dal\BaseExample.Contract.tt = Templates\Dal\BaseExample.Contract.tt
+		Templates\Dal\BaseExample.Entities.tt = Templates\Dal\BaseExample.Entities.tt
+		Templates\Dal\BaseExample.Entities.WCF.tt = Templates\Dal\BaseExample.Entities.WCF.tt
+		Templates\Dal\BaseExample.MessageTypes.tt = Templates\Dal\BaseExample.MessageTypes.tt
+		Templates\Dal\BaseExample.oData.tt = Templates\Dal\BaseExample.oData.tt
+		Templates\Dal\BaseExample.Validator.tt = Templates\Dal\BaseExample.Validator.tt
+		Templates\Dal\Util.ttinclude = Templates\Dal\Util.ttinclude
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{9B6F2843-5301-405F-B96A-EB9AA2C5EBEC}"
+	ProjectSection(SolutionItems) = preProject
+		Templates\Service\MessageTemplate.tt = Templates\Service\MessageTemplate.tt
+		Templates\Service\ServiceBaseTemplate.tt = Templates\Service\ServiceBaseTemplate.tt
+		Templates\Service\ServiceContractGenerator.tt = Templates\Service\ServiceContractGenerator.tt
+		Templates\Service\ServiceImplementationTemplate.tt = Templates\Service\ServiceImplementationTemplate.tt
+		Templates\Service\ServiceInterfaceTemplate.tt = Templates\Service\ServiceInterfaceTemplate.tt
+		Templates\Service\WcfServiceCodeGen.tt = Templates\Service\WcfServiceCodeGen.tt
+		Templates\Service\WebConfigGenerator.tt = Templates\Service\WebConfigGenerator.tt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Application.Services", "ECommerce.Application.Services\ECommerce.Application.Services.csproj", "{64E901D6-6B0F-46BD-836C-49BEF1CE8356}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug  - Vimaj|Any CPU = Debug  - Vimaj|Any CPU
+		Debug - AxysWeb|Any CPU = Debug - AxysWeb|Any CPU
+		Debug - Mauricio|Any CPU = Debug - Mauricio|Any CPU
+		Debug - Tomas|Any CPU = Debug - Tomas|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Lider Distribuidora|Any CPU = Lider Distribuidora|Any CPU
+		Release - Mauricio|Any CPU = Release - Mauricio|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Tomas|Any CPU = Tomas|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18A6FDDA-3214-4A2D-A559-8C9BC5FF856B}.Debug  - Vimaj|Any CPU.ActiveCfg = Debug|Any CPU
+		{18A6FDDA-3214-4A2D-A559-8C9BC5FF856B}.Debug  - Vimaj|Any CPU.Build.0 = Debug|Any CPU
+		{18A6FDDA-3214-4A2D-A559-8C9BC5FF856B}.Debug - AxysWeb|Any CPU.ActiveCfg = Debug|Any CPU
+		{18A6FDDA-3214-4A2D-A559-8C9BC5FF856B}.Debug - AxysWeb|Any CPU.Build.0 = Debug|Any CPU
+		{18A6FDDA-3214-4A2D-A559-8C9BC5FF856B}.Debug - Mauricio|Any CPU.ActiveCfg = Debug|Any CPU
+		{18A6FDDA-3214-4A2D-A559-8C9BC5FF856B}.Debug - Mauricio|Any CPU.Build.0 = Debug|Any CPU
+		{18A6FDDA-3214-4A2D-A559-8C9BC5FF856B}.Debug - Tomas|Any CPU.ActiveCfg = Debug|Any CPU
+		{18A6FDDA-3214-4A2D-A559-8C9BC5FF856B}.Debug - Tomas|Any CPU.Build.0 = Debug|Any CPU
+		{18A6FDDA-3214-4A2D-A559-8C9BC5FF856B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18A6FDDA-3214-4A2D-A559-8C9BC5FF856B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18A6FDDA-3214-4A2D-A559-8C9BC5FF856B}.Lider Distribuidora|Any CPU.ActiveCfg = Release|Any CPU
+		{18A6FDDA-3214-4A2D-A559-8C9BC5FF856B}.Lider Distribuidora|Any CPU.Build.0 = Release|Any CPU
+		{18A6FDDA-3214-4A2D-A559-8C9BC5FF856B}.Release - Mauricio|Any CPU.ActiveCfg = Release|Any CPU
+		{18A6FDDA-3214-4A2D-A559-8C9BC5FF856B}.Release - Mauricio|Any CPU.Build.0 = Release|Any CPU
+		{18A6FDDA-3214-4A2D-A559-8C9BC5FF856B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18A6FDDA-3214-4A2D-A559-8C9BC5FF856B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18A6FDDA-3214-4A2D-A559-8C9BC5FF856B}.Tomas|Any CPU.ActiveCfg = Release|Any CPU
+		{18A6FDDA-3214-4A2D-A559-8C9BC5FF856B}.Tomas|Any CPU.Build.0 = Release|Any CPU
+		{15DF9968-2CF8-469A-AF12-A8914B664EAF}.Debug  - Vimaj|Any CPU.ActiveCfg = Debug|Any CPU
+		{15DF9968-2CF8-469A-AF12-A8914B664EAF}.Debug  - Vimaj|Any CPU.Build.0 = Debug|Any CPU
+		{15DF9968-2CF8-469A-AF12-A8914B664EAF}.Debug - AxysWeb|Any CPU.ActiveCfg = Debug|Any CPU
+		{15DF9968-2CF8-469A-AF12-A8914B664EAF}.Debug - AxysWeb|Any CPU.Build.0 = Debug|Any CPU
+		{15DF9968-2CF8-469A-AF12-A8914B664EAF}.Debug - Mauricio|Any CPU.ActiveCfg = Debug|Any CPU
+		{15DF9968-2CF8-469A-AF12-A8914B664EAF}.Debug - Mauricio|Any CPU.Build.0 = Debug|Any CPU
+		{15DF9968-2CF8-469A-AF12-A8914B664EAF}.Debug - Tomas|Any CPU.ActiveCfg = Debug|Any CPU
+		{15DF9968-2CF8-469A-AF12-A8914B664EAF}.Debug - Tomas|Any CPU.Build.0 = Debug|Any CPU
+		{15DF9968-2CF8-469A-AF12-A8914B664EAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15DF9968-2CF8-469A-AF12-A8914B664EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15DF9968-2CF8-469A-AF12-A8914B664EAF}.Lider Distribuidora|Any CPU.ActiveCfg = Release|Any CPU
+		{15DF9968-2CF8-469A-AF12-A8914B664EAF}.Lider Distribuidora|Any CPU.Build.0 = Release|Any CPU
+		{15DF9968-2CF8-469A-AF12-A8914B664EAF}.Release - Mauricio|Any CPU.ActiveCfg = Release|Any CPU
+		{15DF9968-2CF8-469A-AF12-A8914B664EAF}.Release - Mauricio|Any CPU.Build.0 = Release|Any CPU
+		{15DF9968-2CF8-469A-AF12-A8914B664EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15DF9968-2CF8-469A-AF12-A8914B664EAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15DF9968-2CF8-469A-AF12-A8914B664EAF}.Tomas|Any CPU.ActiveCfg = Release|Any CPU
+		{15DF9968-2CF8-469A-AF12-A8914B664EAF}.Tomas|Any CPU.Build.0 = Release|Any CPU
+		{64E901D6-6B0F-46BD-836C-49BEF1CE8356}.Debug  - Vimaj|Any CPU.ActiveCfg = Debug|Any CPU
+		{64E901D6-6B0F-46BD-836C-49BEF1CE8356}.Debug  - Vimaj|Any CPU.Build.0 = Debug|Any CPU
+		{64E901D6-6B0F-46BD-836C-49BEF1CE8356}.Debug - AxysWeb|Any CPU.ActiveCfg = Debug|Any CPU
+		{64E901D6-6B0F-46BD-836C-49BEF1CE8356}.Debug - AxysWeb|Any CPU.Build.0 = Debug|Any CPU
+		{64E901D6-6B0F-46BD-836C-49BEF1CE8356}.Debug - Mauricio|Any CPU.ActiveCfg = Debug|Any CPU
+		{64E901D6-6B0F-46BD-836C-49BEF1CE8356}.Debug - Mauricio|Any CPU.Build.0 = Debug|Any CPU
+		{64E901D6-6B0F-46BD-836C-49BEF1CE8356}.Debug - Tomas|Any CPU.ActiveCfg = Debug|Any CPU
+		{64E901D6-6B0F-46BD-836C-49BEF1CE8356}.Debug - Tomas|Any CPU.Build.0 = Debug|Any CPU
+		{64E901D6-6B0F-46BD-836C-49BEF1CE8356}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64E901D6-6B0F-46BD-836C-49BEF1CE8356}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64E901D6-6B0F-46BD-836C-49BEF1CE8356}.Lider Distribuidora|Any CPU.ActiveCfg = Release|Any CPU
+		{64E901D6-6B0F-46BD-836C-49BEF1CE8356}.Lider Distribuidora|Any CPU.Build.0 = Release|Any CPU
+		{64E901D6-6B0F-46BD-836C-49BEF1CE8356}.Release - Mauricio|Any CPU.ActiveCfg = Release|Any CPU
+		{64E901D6-6B0F-46BD-836C-49BEF1CE8356}.Release - Mauricio|Any CPU.Build.0 = Release|Any CPU
+		{64E901D6-6B0F-46BD-836C-49BEF1CE8356}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64E901D6-6B0F-46BD-836C-49BEF1CE8356}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64E901D6-6B0F-46BD-836C-49BEF1CE8356}.Tomas|Any CPU.ActiveCfg = Release|Any CPU
+		{64E901D6-6B0F-46BD-836C-49BEF1CE8356}.Tomas|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E9FAD351-A3F4-4734-8916-5C25D413296B} = {296FEB4B-3DA7-4BBE-BA64-C99F876F1DE2}
+		{9B6F2843-5301-405F-B96A-EB9AA2C5EBEC} = {296FEB4B-3DA7-4BBE-BA64-C99F876F1DE2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC253388-5597-4203-9D5B-898C216794CB}
+	EndGlobalSection
+EndGlobal

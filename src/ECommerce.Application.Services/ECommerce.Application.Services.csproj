@@ -1,0 +1,200 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{64E901D6-6B0F-46BD-836C-49BEF1CE8356}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ECommerce.Application.Services</RootNamespace>
+    <AssemblyName>ECommerce.Application.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WcfServiceCodeGen.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>WcfServiceCodeGen1.cs</LastGenOutput>
+      <LastOutputs>
+.\base\AdminModule\AdminModuleBase.generated.cs
+.\base\AdminModule\AdminModuleRequest.generated.cs
+.\base\AdminModule\AdminModuleResponse.generated.cs
+.\base\AdminModule\GetModulesByUserIdRequest.generated.cs
+.\base\AdminModule\GetModulesByUserIdResponse.generated.cs
+.\base\AdminUser\AdminUserBase.generated.cs
+.\base\AdminUser\AdminUserRequest.generated.cs
+.\base\AdminUser\AdminUserResponse.generated.cs
+.\base\AdminUser\DeleteUserByIdRequest.generated.cs
+.\base\AdminUser\DeleteUserByIdResponse.generated.cs
+.\base\AdminUser\GetAllUsersRequest.generated.cs
+.\base\AdminUser\GetAllUsersResponse.generated.cs
+.\base\AdminUser\GetUserByIdRequest.generated.cs
+.\base\AdminUser\GetUserByIdResponse.generated.cs
+.\base\AdminUser\GetUserByLoginRequest.generated.cs
+.\base\AdminUser\GetUserByLoginResponse.generated.cs
+.\base\AdminUser\InsertUserRequest.generated.cs
+.\base\AdminUser\InsertUserResponse.generated.cs
+.\base\AdminUser\UpdateUserRequest.generated.cs
+.\base\AdminUser\UpdateUserResponse.generated.cs
+.\Interfaces\AdminModule\IAdminModule.generated.cs
+.\Interfaces\AdminUser\IAdminUser.generated.cs
+</LastOutputs>
+    </Content>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="base\AdminModule\AdminModuleBase.generated.cs" />
+    <Compile Include="base\AdminModule\AdminModuleRequest.generated.cs" />
+    <Compile Include="base\AdminModule\AdminModuleResponse.generated.cs" />
+    <Compile Include="base\AdminModule\GetModulesByUserIdRequest.generated.cs" />
+    <Compile Include="base\AdminModule\GetModulesByUserIdResponse.generated.cs" />
+    <Compile Include="base\AdminUser\AdminUserBase.generated.cs" />
+    <Compile Include="base\AdminUser\AdminUserRequest.generated.cs" />
+    <Compile Include="base\AdminUser\AdminUserResponse.generated.cs" />
+    <Compile Include="base\AdminUser\DeleteUserByIdRequest.generated.cs" />
+    <Compile Include="base\AdminUser\DeleteUserByIdResponse.generated.cs" />
+    <Compile Include="base\AdminUser\GetAllUsersRequest.generated.cs" />
+    <Compile Include="base\AdminUser\GetAllUsersResponse.generated.cs" />
+    <Compile Include="base\AdminUser\GetUserByIdRequest.generated.cs" />
+    <Compile Include="base\AdminUser\GetUserByIdResponse.generated.cs" />
+    <Compile Include="base\AdminUser\GetUserByLoginRequest.generated.cs" />
+    <Compile Include="base\AdminUser\GetUserByLoginResponse.generated.cs" />
+    <Compile Include="base\AdminUser\InsertUserRequest.generated.cs" />
+    <Compile Include="base\AdminUser\InsertUserResponse.generated.cs" />
+    <Compile Include="base\AdminUser\UpdateUserRequest.generated.cs" />
+    <Compile Include="base\AdminUser\UpdateUserResponse.generated.cs" />
+    <Compile Include="Interfaces\AdminModule\IAdminModule.generated.cs" />
+    <Compile Include="Interfaces\AdminUser\IAdminUser.generated.cs" />
+    <Compile Include="Messages\AdminModule\AdminModuleRequest.cs" />
+    <Compile Include="Messages\AdminModule\AdminModuleResponse.cs" />
+    <Compile Include="Messages\AdminModule\GetModulesByUserId\GetModulesByUserIdRequest.cs" />
+    <Compile Include="Messages\AdminModule\GetModulesByUserId\GetModulesByUserIdResponse.cs" />
+    <Compile Include="Messages\AdminUser\AdminUserRequest.cs" />
+    <Compile Include="Messages\AdminUser\AdminUserResponse.cs" />
+    <Compile Include="Messages\AdminUser\DeleteUserById\DeleteUserByIdRequest.cs" />
+    <Compile Include="Messages\AdminUser\DeleteUserById\DeleteUserByIdResponse.cs" />
+    <Compile Include="Messages\AdminUser\GetAllUsers\GetAllUsersRequest.cs" />
+    <Compile Include="Messages\AdminUser\GetAllUsers\GetAllUsersResponse.cs" />
+    <Compile Include="Messages\AdminUser\GetUserById\GetUserByIdRequest.cs" />
+    <Compile Include="Messages\AdminUser\GetUserById\GetUserByIdResponse.cs" />
+    <Compile Include="Messages\AdminUser\GetUserByLogin\GetUserByLoginRequest.cs" />
+    <Compile Include="Messages\AdminUser\GetUserByLogin\GetUserByLoginResponse.cs" />
+    <Compile Include="Messages\AdminUser\InsertUser\InsertUserRequest.cs" />
+    <Compile Include="Messages\AdminUser\InsertUser\InsertUserResponse.cs" />
+    <Compile Include="Messages\AdminUser\UpdateUser\UpdateUserRequest.cs" />
+    <Compile Include="Messages\AdminUser\UpdateUser\UpdateUserResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AdminModule.cs" />
+    <Compile Include="Services\AdminUser.cs" />
+    <Compile Include="WcfServiceCodeGen1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WcfServiceCodeGen.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ECommerce.Domain\ECommerce.Domain.csproj">
+      <Project>{15df9968-2cf8-469a-af12-a8914b664eaf}</Project>
+      <Name>ECommerce.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ECommerce.Infrastructure\ECommerce.Infrastructure.csproj">
+      <Project>{18a6fdda-3214-4a2d-a559-8c9bc5ff856b}</Project>
+      <Name>ECommerce.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56908</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56908/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

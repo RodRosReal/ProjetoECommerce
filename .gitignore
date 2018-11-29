@@ -3,3 +3,10 @@
 ################################################################################
 
 /src/ECommerce.Application.Services/bin
+/src/ECommerce.Application.Services/obj
+/src/ECommerce.Domain/bin/Debug
+/.vs
+/src/ECommerce.Domain/obj
+/src/ECommerce.Infrastructure/bin/Debug
+/src/ECommerce.Infrastructure/obj
+/src/packages

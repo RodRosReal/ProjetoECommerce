@@ -1,0 +1,38 @@
+﻿<#@ template language="C#" hostspecific="True" debug="True" #>
+<#@ output extension="cs" #>   
+<#@ include file="T4Toolbox.tt" #>    
+<#@ include file="../Templates/Service/ServiceContractGenerator.tt" #>
+
+<#
+	var rootNamespace = "ECommerce.Application";
+	var dic = new Dictionary<string, List<string>>();
+	
+	// Definindo serviços e suas operações
+	//dic.Add("ManagementService", new List<string>()
+	//{    
+	//	"<MethodName1>"
+	//});
+
+	dic.Add("AdminUser", new List<string>()
+	{    
+		"GetUserById",		
+		"DeleteUserById", 
+		"GetAllUsers",
+		"InsertUser",
+		"UpdateUser",
+		"GetUserByLogin"
+	});
+
+	dic.Add("AdminModule", new List<string>()
+	{    
+		"GetModulesByUserId"
+	});
+	
+	// Criando estrutura dos serviços
+	foreach (var service in dic.Keys)
+	{
+		var servicesGenerator = new ServiceContractGenerator(rootNamespace, service, dic[service]);
+		servicesGenerator.GenerateWcfDecorators = true;
+		servicesGenerator.Run();
+	}	
+#>  
