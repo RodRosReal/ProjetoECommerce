@@ -74,16 +74,26 @@ namespace ECommerce.Application.Services
             {
                 if (request != null)
                 {
-                    var pagedOptions = new PagedOptions() { Direction = request.SortDirection, OrderBy = request.PropertyName, PageNumber = request.PageNumber, PageSize = request.PageSize, IncludeTotalCount = true };
                     var spec = new UsuariosAllSpec(request.Filter);
 
-                    var repository = _usuarioRepository.QueryPaged(pagedOptions, spec);
+                    if (request.PageSize > 0)
+                    {
+                        var pagedOptions = new PagedOptions() { Direction = request.SortDirection, OrderBy = request.PropertyName, PageNumber = request.PageNumber, PageSize = request.PageSize, IncludeTotalCount = true };
 
-                    response.PageResult = new PagedResult<UsuarioDto>(repository.PageNumber, repository.PageSize, repository.TotalCount, _mapperService.Map<List<UsuarioDto>>(repository.DataList));
+                        var repository = _usuarioRepository.QueryPaged(pagedOptions, spec);
+
+                        response.PageResult = new PagedResult<UsuarioDto>(repository.PageNumber, repository.PageSize, repository.TotalCount, _mapperService.Map<List<UsuarioDto>>(repository.DataList));
+                    }
+                    else
+                    {
+                        var repository = _usuarioRepository.Query(spec, request.PropertyName, request.SortDirection);
+
+                        response.PageResult = new PagedResult<UsuarioDto>(0, 0, repository.Count, _mapperService.Map<List<UsuarioDto>>(repository));
+                    }
                 }
                 else
                 {
-                    var usuarios = _usuarioRepository.QueryAll();
+                    var usuarios = _usuarioRepository.Query(null);
                     response.PageResult = new PagedResult<UsuarioDto>(0, 0, usuarios.Count, _mapperService.Map<List<UsuarioDto>>(usuarios));
                 }
 

@@ -1,4 +1,5 @@
 ﻿using ECommerce.Domain.Core;
+using ECommerce.Domain.ValueObjects;
 using ECommerce.Infrastructure.Context;
 using System;
 using System.Collections.Generic;
@@ -42,6 +43,20 @@ namespace ECommerce.Infrastructure.Repositories.Relational
                 throw new ArgumentNullException(nameof(spec));
 
             return this.Query()
+                .Where(spec.Expression)
+                .ToList();
+        }
+
+        public List<TEntity> Query(BaseSpecification<TEntity> spec, string orderBy, SortDirection direction)
+        {
+            if (spec == null)
+                throw new ArgumentNullException(nameof(spec));
+
+            var query = this.Query();
+            if (!string.IsNullOrEmpty(orderBy))
+                query = query.OrderBy(orderBy, direction);
+
+            return query
                 .Where(spec.Expression)
                 .ToList();
         }
