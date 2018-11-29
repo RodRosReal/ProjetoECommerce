@@ -15,6 +15,6 @@ namespace P2A.Leads.Domain.Specifications
 
         public override string Description => $"";
 
-        protected override Expression<Func<Modulo, bool>> GetFinalExpression() => x => x.Modulo_IdPai == 0;
+        protected override Expression<Func<Modulo, bool>> GetFinalExpression() => x => x.ModuloIdPai == 0;
     }
 }

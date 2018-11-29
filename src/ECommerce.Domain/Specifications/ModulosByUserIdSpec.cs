@@ -17,6 +17,6 @@ namespace P2A.Leads.Domain.Specifications
 
         public override string Description => $"";
 
-        protected override Expression<Func<Modulo, bool>> GetFinalExpression() => x => x.UsuarioToModulo.Any(y=>y.Usuario_Id == this.Id);
+        protected override Expression<Func<Modulo, bool>> GetFinalExpression() => x => x.UsuarioModulo.Any(y=>y.UsuarioId == this.Id);
     }
 }
